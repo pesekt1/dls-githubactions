@@ -1,0 +1,8 @@
+name: Github demo
+on: push
+jobs:
+  Example-job:
+    name: exploring github actions
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "the job was triggered by a ${{ github.event_name }}"
